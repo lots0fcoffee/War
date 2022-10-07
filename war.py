@@ -1,6 +1,3 @@
-# TODO: - Player deck not replacing from win pile
-#       - Need to clear prize lists after War is over
-
 import datetime
 import random
 import time
