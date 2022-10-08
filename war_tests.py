@@ -82,9 +82,9 @@ class test_war_run(test_war):
         list_five = [12, 3, 4, 5, 10, 11, 7]
         list_six = [12, 6, 7, 5, 9, 8, 5]
 
-        win_bit_one = self.play_war(list_one, list_two)
-        win_bit_two = self.play_war(list_three, list_four)
-        win_bit_three = self.play_war(list_five, list_six)
+        win_bit_one, turns = self.play_war(list_one, list_two)
+        win_bit_two, turns = self.play_war(list_three, list_four)
+        win_bit_three, turns = self.play_war(list_five, list_six)
 
         self.assertEqual(win_bit_one, 1)
         self.assertEqual(win_bit_two, 2)
